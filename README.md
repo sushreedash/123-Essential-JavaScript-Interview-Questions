@@ -367,7 +367,7 @@ The code above will output `xyz` as output. Here `emp1` object got company as **
 `emp1` object doesn't have **company** as its own property. you can test it `console.log(emp1.hasOwnProperty('company')); //output : false` However, we can delete company property directly from `Employee` object using `delete Employee.company` or we can also delete from `emp1` object using `__proto__` property `delete emp1.__proto__.company`.
 
 
-## Question 12. What is `undefined x 1` in JavaScript
+## Question 12. What is `undefined x 1` in JavaScript.
 
 ```javascript
 var trees = ["redwood", "bay", "cedar", "oak", "maple"];
@@ -706,12 +706,12 @@ function Employee(name, age) {
   this.age = age;
 }
 
-var emp1 = new Employee('John Doe', 28);
+var emp1 = new Employee('John Doe', 27);
 emp1.name; // "John Doe"
-emp1.age; // 28
+emp1.age; // 27
 ```
 
-Unlike function calls and method calls, a constructor call `new Employee('John Doe', 28)` creates a brand new object and passes it as the value of `this`, and implicitly returns the new object as its result.
+Unlike function calls and method calls, a constructor call `new Employee('John Doe', 27)` creates a brand new object and passes it as the value of `this`, and implicitly returns the new object as its result.
 
 The primary role of the constructor function is to initialize the object.
 
